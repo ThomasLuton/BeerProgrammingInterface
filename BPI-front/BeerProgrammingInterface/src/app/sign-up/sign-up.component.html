@@ -1,0 +1,19 @@
+<form [formGroup]="signUp" (ngSubmit)="onSubmit()" class="container-xl col-12 col-md-4" id="sign-up">
+    <div class="mb-3">
+        <label for="pseudo" class="form-label">Pseudo</label>
+        <input formControlName="pseudo" type="text" class="form-control" id="pseudo" aria-describedby="pseudoHelp">
+        <div id="pseudoHelp" class="form-text">Un pseudo</div>
+    </div>
+    <div class="mb-3">
+        <label for="mail" class="form-label">Mail</label>
+        <input formControlName="mail" type="email" class="form-control" id="mail" aria-describedby="mailHelp">
+        <div id="emailHelp" class="form-text">Un mail</div>
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input formControlName="password" type="password" class="form-control" id="password"
+            aria-describedby="passwordHelp">
+        <div id="passwordHelp" class="form-text">e.g. Garfield2020!</div>
+    </div>
+    <button type="submit" class="btn" [disabled]="!signUp.valid">Submit</button>
+</form>

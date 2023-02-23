@@ -9,4 +9,4 @@
 	chartre graphique
 	variable css
 	habillé la validation des formulaires
--préparer le github
+-préparer le github => done

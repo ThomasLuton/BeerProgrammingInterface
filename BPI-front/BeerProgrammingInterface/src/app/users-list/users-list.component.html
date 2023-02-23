@@ -1,0 +1,27 @@
+<div class="container-xl">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Pseudo</th>
+                <th scope="col">Mail</th>
+                <th scope="col">Rôle</th>
+                <th scope="col">Nouveau rôle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of this.users">
+                <td>{{user.pseudo}}</td>
+                <td>{{user.mail}}</td>
+                <td>{{roles[(user.roleId) - 1].name}}</td>
+                <td>
+                    <select id="roleSelect" name="roleSelect" class="form-select mb-3" #roleInput>
+                        <option selected>{{roles[(user.roleId) - 1].name}}</option>
+                        <option *ngFor="let role of roles">{{role.name}}
+                        </option>
+                    </select>
+                    <button (click)="onSubmit(roleInput.value, user.id)">Update</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
