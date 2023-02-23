@@ -1,0 +1,12 @@
+-Route à mettre en place => done
+-databinding two way signup => done
+-validations signup => done 
+-conception layout front => admin(lists), user(update account, create and update beer), general(voir beer, signin and up),...
+-conception base de données 
+-conception back
+-paufiner le front signUp + header + main + footer
+	externaliser les libellés
+	chartre graphique
+	variable css
+	habillé la validation des formulaires
+-préparer le github

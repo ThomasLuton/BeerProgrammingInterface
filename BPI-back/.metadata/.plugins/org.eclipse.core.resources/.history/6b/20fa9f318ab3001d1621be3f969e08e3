@@ -1,0 +1,14 @@
+package co.simplon.bpi;
+
+@Configuration
+public class WebConfig implements WebMvcConfigurer {
+
+    @Value("${stickme.cors.allowedOrigins}")
+    private String[] allowedOrigins;
+
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+	registry.addMapping("/**").allowedOrigins(allowedOrigins)
+		.allowedMethods("POST", "GET", "PUT", "PATCH", "DELETE");
+    }
+}

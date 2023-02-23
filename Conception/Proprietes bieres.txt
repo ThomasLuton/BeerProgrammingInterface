@@ -1,0 +1,15 @@
+{
+	fermentation: haute (ale), basse (lager) ou autres sauvage, cerise, fut de chene,
+	nom de la levure : string,
+	ibu: number,
+	taux alcool: number,
+	labels: IPA, blanche, brune, ... ex: guiness stout brune ou killkenny stout blonde ===> comme les types pokemons
+ 	origine: pays,
+	description: string,
+	nom: string 
+	brasserie: string,
+	allergènes: string[],
+	ingrédients: string[],
+	urlPhoto: string[]
+}
+	

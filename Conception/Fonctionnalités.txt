@@ -1,0 +1,32 @@
+* => MVP @DONE => Livrable
+Visiteur
+	S'inscrire *
+	Se connecter
+	Consulter la liste des bières
+	Consulter le détail d'une bières
+	Rechercher une bière
+	Savoir si une bière est validée par la modération
+
+Utilisateur
+	Changer son mdp
+	Changer son pseudo
+	Reset son mdp => mdp oublié
+	Créer une alerte sur une bière existante
+	Créer une bière
+	Consulter la liste des bières ajoutées par lui même
+	Modifier une bière ajoutée par lui même
+	Doit être prévenu si une de ses bière reçoit une alerte 
+	Consulter les alertes liées à ses bières
+	Doit être prévenu si un modérateur modifie une de ses bière
+
+Modérateur
+	Modifier n'importe quelle bière
+	Ecrire un commentaire justifiant la modification
+	Valider une bière
+	Désactiver un compte utilisateur (pas de suppression comme ça le mail reste en bdd)
+	Ecrire un commentaire justifiant la désactivation
+
+Admin
+	Consulter la liste des utilisateurs * 
+	Changer les rôles *
+	

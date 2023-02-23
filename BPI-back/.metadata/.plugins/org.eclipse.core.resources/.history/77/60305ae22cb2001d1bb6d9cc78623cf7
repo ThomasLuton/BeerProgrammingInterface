@@ -1,0 +1,12 @@
+package co.simplon.bpi.services;
+
+import org.springframework.stereotype.Service;
+
+import co.simplon.bpi.repositories.RoleRepository;
+
+@Service
+public class RoleServiceImpl implements RoleRepository {
+
+    private RoleRepository roles;
+
+}

@@ -1,0 +1,12 @@
+package co.simplon.bpi.repositories;
+
+import java.util.Collection;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import co.simplon.bpi.entitites.UserAccount;
+
+public interface RoleRepository
+	extends JpaRepository<UserAccount, Long> {
+    Collection<RoleView> findAllProjectedBy();
+}

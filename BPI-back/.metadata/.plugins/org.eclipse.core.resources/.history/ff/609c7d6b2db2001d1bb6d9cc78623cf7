@@ -1,0 +1,44 @@
+package co.simplon.bpi.services;
+
+import java.util.Collection;
+
+import org.springframework.security.crypto.bcrypt.BCrypt;
+import org.springframework.stereotype.Service;
+
+import co.simplon.bpi.dtos.UserAccountDto;
+import co.simplon.bpi.dtos.UserAccountView;
+import co.simplon.bpi.entitites.UserAccount;
+import co.simplon.bpi.repositories.UserAccountRepository;
+
+@Service
+public class UserAccountServiceImpl
+	implements UserAccountService {
+    private UserAccountRepository userAccounts;
+    private RoleService role;
+    private final int COST = 12;
+
+    public UserAccountServiceImpl(
+	    UserAccountRepository userAccounts) {
+
+	this.userAccounts = userAccounts;
+    }
+
+    @Override
+    public void create(UserAccountDto inputs) {
+	UserAccount userAccount = new UserAccount();
+	userAccount.setPseudo(inputs.getPseudo());
+	userAccount.setMail(inputs.getMail());
+
+	String hash = BCrypt.hashpw(inputs.getPassword(),
+		BCrypt.gensalt(COST));
+	userAccount.setPassword(hash);
+
+	userAccounts.save(userAccount);
+    }
+
+    @Override
+    public Collection<UserAccountView> getAll() {
+	return userAccounts.findAllProjectedBy();
+    }
+
+}

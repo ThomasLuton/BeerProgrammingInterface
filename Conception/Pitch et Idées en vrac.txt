@@ -1,0 +1,19 @@
+Pitch
+	Création d'un wikipédia de la bière qui peut exposer des endpoints pour récupérer les infos automatiquement
+
+Visiteur => consulter la liste des bières/familles/types/régions/......
+	    faire des recherches dans la liste
+User => s'authentifier pour :
+	ajouter une donnée
+	modifier une donnée
+	juger la qualitée d'une fiche (commentaire + vote)
+Dev => consulter la doc de l'api
+Modérateur => Peut être alerté si trop de vote négatifs
+	      Corriger une donnée ( modification, suppression ou validation)
+Admin => Accorder le rôle de modérateur
+
+!!!! Voir si faisable !!!!
+	Un brasseur pourra s'authentifier en tant que tel
+	automatiquement et sera vérifier
+	Les données du brasseur seront identifiées et tout le monde 
+	pourra voir que l'info vient de CE brasseur

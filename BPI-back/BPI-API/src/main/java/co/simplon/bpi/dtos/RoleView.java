@@ -1,0 +1,7 @@
+package co.simplon.bpi.dtos;
+
+public interface RoleView {
+    Long getId();
+
+    String getName();
+}

@@ -1,0 +1,5 @@
+package co.simplon.bpi.services;
+
+public class RoleServiceImpl implements RoleServicel {
+
+}

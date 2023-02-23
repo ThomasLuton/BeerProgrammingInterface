@@ -1,0 +1,13 @@
+package co.simplon.bpi.dtos;
+
+public interface UserAccountView {
+    Long getId();
+
+    String getPseudo();
+
+    String getMail();
+
+    String getPassword();
+
+    Long getRoleId();
+}

@@ -1,0 +1,9 @@
+{
+	biere: biere,
+	avis négatif: {votes: number, commentaires: string},
+	isValid: boolean,
+	isActive: boolean,
+	createdAt: localdatetime,
+	updatedAt: localdatetime,
+	auteur: userAccounts
+}
